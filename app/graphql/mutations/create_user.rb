@@ -11,20 +11,6 @@ module Mutations
     type Types::UserType
     def resolve(**attributes)
       user = User.create!(attributes)
-  
-      # if user.save
-      #   # Successful creation, return the created object with no errors
-      #   {
-      #     user: user,
-      #     errors: [],
-      #   }
-      # else
-      #   # Failed save, return the errors to the client
-      #   {
-      #     comment: nil,
-      #     errors: user.errors.full_messages
-      #   }
-      # end
     end
   end
 end
